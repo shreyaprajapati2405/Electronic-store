@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(177, 190, 190, 0.9);
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(220, 20, 60, 0.712);
+            color: #fff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .headphone {
+            text-align: center;
+            width: 85%;
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 200px;
+            position: relative;
+            margin-top: 100px;
+            border-radius: 30px;
+            transition: all ease 2.5s;
+        }
+
+        .headphone:hover {
+            bottom: 10px;
+        }
+
+        .watch {
+            text-align: center;
+            width: 85%;
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 200px;
+            position: relative;
+            margin-top: 100px;
+            border-radius: 30px;
+            transition: all ease 2.5s;
+        }
+
+        .watch:hover {
+            bottom: 10px;
+        }
+
+        .earbud {
+            text-align: center;
+            width: 85%;
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 200px;
+            position: relative;
+            margin-top: 100px;
+            border-radius: 30px;
+            transition: all ease 2.5s;
+        }
+
+        .earbud:hover {
+            bottom: 10px;
+        }
+
+
+        h3 {
+            font-size: 5vmin;
+            text-align: center;
+            margin: 2rem 3rem 0;
+            mix-blend-mode: overlay;
+            color: #fff;
+        }
+
+        h4 {
+            font-size: 5vmin;
+            text-align: center;
+            margin: 2rem 3rem 0;
+            mix-blend-mode: overlay;
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 90%;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            font-size: 5vmin;
+            text-align: center;
+            margin: 2rem 3rem 0;
+            mix-blend-mode: overlay;
+            color: #fff;
+            position: relative;
+            top: 25%;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .card::after {
+            content: "Add to Cart";
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            height: 19%;
+            background: #00ac7c;
+            border-radius: 10px;
+            opacity: 0;
+            transition: all ease 0.1s;
+            left: 0;
+            text-align: center;
+        }
+
+        .card:hover::after {
+            opacity: 1;
+            bottom: 0px;
+        }
+
+        .card .price {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 0px;
+            left: 30%;
+            padding: 2%;
+        }
+
+        .card .text {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 15px;
+            left: 30%;
+            padding: 2%;
+        }
+
+        .image {
+            width: 100px;
+            height: auto;
+        }
+
+        .row {
+            /* background-color: rgba(0, 0, 0, 0.4); */
+            width: 88%;
+            position: relative;
+            left: 9%;
+            border-radius: 10px;
+        }
+
+        .col {
+            padding: 2px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="navbar navbar-expand-lg header" style="background-color: rgba(177, 190, 190, 0.9);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Electronic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="product1.html ">Headphone</a>
+                                <a href= "product2.html ">Watch</a>
+                                <a href=" product3.html">Laptop</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="search"><a href="cart.html"
+                            style="text-decoration: none; color: black;">CART</a></button>&nbsp;
+                    <button class="btn btn-outline-success"><a href="login.html"
+                            style="text-decoration: none; color: black;">LOGIN</a></button>&nbsp;
+                    <button class="btn btn-outline-success"><a href="registeration.html"
+                            style="text-decoration: none; color: black;">Register</a></button>&nbsp;
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid headphone ">
+                    <img src=" " class="float-end" alt="watch" width="200px">
+                    <h3>HEADPHONE</h3><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quisquam, harum consequatur
+                        laborum sequi natus minima veritatis dolorum suscipit, itaque excepturi ea iste commodi quae
+                        totam alias. Ut, ipsum praesentium.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid watch">
+                    <img src="  " class="float-start" alt="watch" width="200px">
+                    <h4>WATCH</h4><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quisquam, harum consequatur
+                        laborum sequi natus minima veritatis dolorum suscipit, itaque excepturi ea iste commodi quae
+                        totam alias. Ut, ipsum praesentium.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid earbud">
+                    <img src=" " class="float-end" alt="Laptop" width="250px">
+                    <h3>EARBUD</h3><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aliquam, aut molestiae, cumque
+                        iste non esse neque dolore modi nihil aperiam tenetur facilis quis harum quo totam, ipsum
+                        temporibus at.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <span class="text">
+            <h1>SHOP</h1>
+        </span>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image2.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image3.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image4.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/earbuds23.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image2.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image3.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/image4.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <span><img src="images/earbuds23.png" alt="" class="image"></span>
+                <span class="price">Rs 1200</span>
+                <span class="text">Product</span>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+
+    <!-- footer -->
+
+    <div class="container-fulid">
+        <div class="footer">
+            <h1 style="font-size: smaller; padding:1px">@Electronic store</h1>
+        </div>
+    </div><br><br><br>

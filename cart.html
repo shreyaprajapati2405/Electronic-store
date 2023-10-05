@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .container-fluid {
+            text-align: center;
+            background-color: rgba(65, 127, 148, 0.2);
+            padding: 5px;
+            position:fixed;
+        }
+
+        .table {
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center;
+            position: absolute;
+            width: 40%;
+        }
+
+        .btn-group {
+            top: 30px;
+            right: 5px;
+            position: relative;
+        }
+
+        .label {
+            width: 50px;
+        }
+
+        .footer {
+            bottom: 0%;
+            position: fixed;
+        }
+    
+        #pay1{
+        position: relative;
+        /* bottom: 1%; */
+        border-radius: 10%;
+        right:1%;
+        /* width:58px;
+        height:50px; */
+    }
+    
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h3> Cart</h3>
+    </div>
+
+    <table class="table  table-hover table-bordered  table-responsive
+    position-absolute top-50 start-50  translate-middle">
+        <thead text-align: center;>
+            <tr>
+                <th width="5%">Sr No.</th>
+                <th width="15%">Product</th>
+                <th width="15%">Product Details</th>
+                <th width="15%">Quantity</th>
+                <th width="15%">price</th>
+                <th width="15%">Amount</th>
+                <th width="15%">Action</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider" style="border: 2px solid black;text-align: center;">
+            <tr>
+                <td>1</td>
+                <td><img src="https://top5bestproducts.com/wp-content/uploads/2018/12/71vlUfPeu-L._SL1280_.jpg" alt=""
+                        width="95px"></td>
+                <td>
+                    <ul>
+                        <li>Name</li>
+                        <li>Model</li>
+                        <li> description</b></li>
+                    </ul>
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">-</button>
+                        <input type="text" id="quantity" class="form-control label" value="1">
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </td>
+                <td>Rs.249.99</td>
+                <td>Rs.249.99</td>
+                <td><button class="btn btn-dark" type="submit">Delete</button></td>
+            </tr>
+
+            <!-- product 2 -->
+
+            <tr>
+                <td>2</td>
+                <td><img src=" https://th.bing.com/th/id/OIP.5EZRHGR0LgL2IWcQ511TkQHaF5?pid=ImgDet&rs=1" alt="image"
+                        width="130px"></td>
+                <td>
+                    <ul>
+                        <li>Name</li>
+                        <li>Model</li>
+                        <li> description</b></li>
+                    </ul>
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="decrement">-</button>
+                        <input type="text" id="quantity" class="form-control label" value="1">
+                        <button class="btn btn-primary" id="increment">+</button>
+                    </div>
+                </td>
+                <td>Rs.2500</td>
+                <td>Rs.2500</td>
+                <td><button class="btn btn-dark" type="submit">Delete</button></td>
+            </tr>
+            <!-- product  3-->
+            <tr>
+                <td>3</td>
+                <td><img src=" https://i5.walmartimages.com/asr/edb59b0e-9a69-4a02-b124-051d4f0ca1fc.f38013ce7986c4c7c502f16dc969bb88.jpeg"
+                        alt="" width="95px"></td>
+                <td>
+                    <ul>
+                        <li>Name</li>
+                        <li>Model</li>
+                        <li> description</b></li>
+                    </ul>
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="decrement">-</button>
+                        <input type="text" id="quantity" class="form-control label" value="1">
+                        <button class="btn btn-primary" id="increment">+</button>
+                    </div>
+                </td>
+                <td>Rs.450</td>
+                <td>Rs.450</td>
+                <td><button class="btn btn-dark" type="submit">Delete</button></td>
+            </tr>
+            <!-- Total Price -->
+            <tr>
+                <th colspan="5">Total Price</th>
+                <th ><input type="text" id="sum" value="3999"></th>
+                <th><button type="submit" class="btn btn-primary" id="pay1">Pay Now</button></th>
+            </tr>
+        
+
+        </tbody>
+    </table>
+    <div class="container-fluid footer">
+        <h3> @electronic store </h3>
+    </div>
+
+</body>
+
+</html>

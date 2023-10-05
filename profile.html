@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container-fluid {
+            text-align: center;
+            background-color: rgba(65, 127, 148, 0.2);
+            padding: 2px;
+        }
+        .card {
+            border: 2px solid black;
+            width: 300px;
+            height: max-content;
+            background-color: rgba(65, 127, 148, 0.2);
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: relative;
+            margin-left: 33%;
+            margin-top: 8%;
+            object-fit: cover;
+        }
+
+        .footer {
+            position: absolute;
+            top: 100%;
+            background-color: rgba(65, 127, 148, 0.2);
+        }  
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h4>Electronic Store</h4>
+    </div>
+    <div class=" position-absolute top-50 start-50  translate-middle card">
+        <img src="images\Watch1-1.jpg"  alt="profile" width="250px">
+        <div class="card-body">
+            <h4 class="card-title" style="text-align: center;">Profile
+            </h4>
+            <P class="card-text">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" placeholder="Name" >
+            </P>
+            <P class="card-text">
+                <label for="phone">Phone number</label>
+                <input type="text" class="form-control" placeholder="phone number">
+            </P>
+            <P class="card-text">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="form" placeholder="email">
+            </p>
+            <P class="card-text">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" placeholder="address">
+            </p>
+            <button class="btn btn-outline-success" type="submit" style="margin-left:35%;">Edit</button>
+        </div>
+
+    </div>
+
+    <div class="container-fluid footer">
+        <h3> @electronic store</h3>
+    </div>
+</body>
+</html>

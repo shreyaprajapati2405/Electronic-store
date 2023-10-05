@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container-fluid {
+            text-align: center;
+            background-color: rgba(65, 127, 148, 0.2);
+            padding: 5px;
+        }
+
+        .product {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            max-width: 800px;
+            /* Set a maximum width for the product container */
+            margin: 0 auto;
+            /* Center the product container */
+            margin-top: 5px;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .footer {
+            background-color: rgba(65, 127, 148, 0.2);
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Adjusted sizes */
+        .product img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            /* Set a maximum height for the image */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h3>Electronic Store</h3>
+    </div>
+
+    <div class="container">
+        <!-- Product details -->
+
+        <!-- First product -->
+        <div class="product">
+            <div class="row">
+                <div class="col-md-4" id="1">
+                    <img src="images\laptop1-1.jpg" alt="Laptop">
+                </div>
+                <div class="col-md-8">
+                    <!-- Rest of the product details remain the same -->
+                    <p><b>HP Chromebook X360 Intel Celeron N4120 14 inch(35.6 cm) Micro-Edge, Touchscreen</b></p>
+                    <b>3.0 </b>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked">
+                        <a href=" laptoplanding1.html" style="text-decoration: none;" >1</a>
+                    </span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <h6 class="text-danger">-47% <b class="text-success"> ₹16,990</b></h6>
+                    <p style="font-size: small;">M.R.P:<strike>₹32,295</strike>
+                    </p>
+                    <button class="btn btn-success">Details</button>
+                    <button class="btn btn-success">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second product -->
+         
+          <div class="product" id="2">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images\laptop2-1.jpg" alt="Laptop">
+                </div>
+                <div class="col-md-8">
+                    <!-- Rest of the product details remain the same -->
+                    <p><b>Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8GB/ 512GB/ 14.0"</b></p>
+                    <b>4.</b>
+                    <a href=" laptoplanding2.html" style="text-decoration: none;" >1</a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked" style="color: orange;"></span>
+                    <span class="fa fa-star"></span>
+
+                    <h6 class="text-danger">-28% <b class="text-success">₹50,003</b></h6>
+                    <p style="font-size: small;">M.R.P:<strike>₹69,226</strike>
+                    </p>
+                    <button class="btn btn-success">Details</button>
+                    <button class="btn btn-success">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- third product -->
+        <div class="product" id="3">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images\laptop3-1.jpg" alt="Laptop">
+                </div>
+                <div class="col-md-8">
+                   
+                    <p><b> Zebronics Zeb-Bang Foldable Wireless BT Headphone Comes with 40mm Drivers, AUX Connectivity</b></p>
+                    <b>4.5</b>
+                    <a href=" laptoplanding3.html" style="text-decoration: none;" >1</a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star  checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                    <h6 class="text-danger">-25%<b class="text-success"> ₹53,990</b></h6>
+                    <p style="font-size: small;">M.R.P:<strike>₹71,740</strike>
+                    </p>
+                    <button class="btn btn-success">Details</button>
+                    <button class="btn btn-success">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="container-fluid footer">
+        <h3>@electronic store</h3>
+    </div>
+</body>
+
+</html>
