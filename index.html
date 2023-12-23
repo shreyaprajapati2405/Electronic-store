@@ -35,7 +35,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color:black;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -49,7 +49,7 @@
         }
 
         .dropdown-content a:hover {
-            background-color: rgba(220, 20, 60, 0.712);
+            background-color:rgba(65, 127, 148, 0.2);
             color: #fff;
         }
 
@@ -60,7 +60,7 @@
         .headphone {
             text-align: center;
             width: 85%;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(65, 127, 148, 0.2);
             height: 200px;
             position: relative;
             margin-top: 100px;
@@ -75,7 +75,7 @@
         .watch {
             text-align: center;
             width: 85%;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color:  rgba(65, 127, 148, 0.2);
             height: 200px;
             position: relative;
             margin-top: 100px;
@@ -90,7 +90,7 @@
         .earbud {
             text-align: center;
             width: 85%;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(65, 127, 148, 0.2);
             height: 200px;
             position: relative;
             margin-top: 100px;
@@ -108,7 +108,7 @@
             text-align: center;
             margin: 2rem 3rem 0;
             mix-blend-mode: overlay;
-            color: #fff;
+            color:black;
         }
 
         h4 {
@@ -116,15 +116,15 @@
             text-align: center;
             margin: 2rem 3rem 0;
             mix-blend-mode: overlay;
-            color: #fff;
+            color: black;
         }
 
         p {
-            color: #fff;
+            color:black;
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(65, 127, 148, 0.2);
             width: 90%;
             height: 100px;
             border-radius: 10px;
@@ -135,7 +135,7 @@
             text-align: center;
             margin: 2rem 3rem 0;
             mix-blend-mode: overlay;
-            color: #fff;
+            color: black;
             position: relative;
             top: 25%;
         }
@@ -144,7 +144,7 @@
             position: fixed;
             bottom: 0px;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(1, 132, 175, 0.2);
             text-align: center;
         }
 
@@ -211,6 +211,14 @@
             padding: 2px;
             margin: 5px;
         }
+        #watch{
+            height: 145px;
+        }
+        #laptop{
+            height:140px;
+            padding-top:20px ;
+            width: 140px;
+        }
     </style>
 </head>
 
@@ -261,16 +269,16 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container-fluid headphone ">
-                    <img src=" " class="float-end" alt="watch" width="200px">
+                    <img src=" images\image2.png " class="float-end" alt="Headphone" width="200px">
                     <h3>HEADPHONE</h3><br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quisquam, harum consequatur
+                    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quisquam, harum consequatur
                         laborum sequi natus minima veritatis dolorum suscipit, itaque excepturi ea iste commodi quae
                         totam alias. Ut, ipsum praesentium.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="container-fluid watch">
-                    <img src="  " class="float-start" alt="watch" width="200px">
+                    <img src=" images\hwatch.png " class="float-start" alt="watch" width="200px">
                     <h4>WATCH</h4><br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quisquam, harum consequatur
                         laborum sequi natus minima veritatis dolorum suscipit, itaque excepturi ea iste commodi quae
@@ -279,7 +287,7 @@
             </div>
             <div class="carousel-item">
                 <div class="container-fluid earbud">
-                    <img src=" " class="float-end" alt="Laptop" width="250px">
+                    <img src="images\laptopbg.png  " class="float-end" alt="Laptop" width="250px">
                     <h3>EARBUD</h3><br>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aliquam, aut molestiae, cumque
                         iste non esse neque dolore modi nihil aperiam tenetur facilis quis harum quo totam, ipsum
@@ -306,28 +314,28 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <span><img src="images/image2.png" alt="" class="image"></span>
+                <span><img src=" images\headphones1-2.jpg " alt="" class="image"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/image3.png" alt="" class="image"></span>
+                <span><img src="images\watch.webp  " alt="" class="image"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/image4.png" alt="" class="image"></span>
+                <span><img src="images\laptop.jpg " alt="" class="image" id="laptop"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/earbuds23.png" alt="" class="image"></span>
+                <span><img src=" images\headphones1-3.jpg " alt="" class="image"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
@@ -337,28 +345,28 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <span><img src="images/image2.png" alt="" class="image"></span>
+                <span><img src=" images\Watch1-1.jpg" alt="" class="image" id="watch"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/image3.png" alt="" class="image"></span>
+                <span><img src="images\laptop.jpg  " alt="" class="image" id="laptop"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/image4.png" alt="" class="image"></span>
+                <span><img src="images\headphones1.jpg  " alt="" class="image"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <span><img src="images/earbuds23.png" alt="" class="image"></span>
+                <span><img src=" images\headphones1-2.jpg " alt="" class="image"></span>
                 <span class="price">Rs 1200</span>
                 <span class="text">Product</span>
             </div>
